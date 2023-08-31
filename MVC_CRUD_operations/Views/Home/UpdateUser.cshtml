@@ -1,0 +1,17 @@
+﻿@model MVC_CRUD_operations.Models.Users;
+@{
+    ViewData["Title"] = "UpdateUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Update User</h1>
+
+<form asp-action="UpdateUser" method="post">
+
+    <input type="hidden" asp-for="@Model.UserId" /> 
+    <input class="form-control mb-2" asp-for="@Model.UserName" />
+
+    <button class="btn btn-info" type="submit">Update</button>
+
+</form>
+
